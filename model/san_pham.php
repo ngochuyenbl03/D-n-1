@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 function insert_sanpham($ten_sp,$giasp,$img,$mota,$iddm){
     $sql="insert into san_pham(name,price,image,mo_ta,iddm) values('$ten_sp','$giasp','$img','$mota','$iddm')";
