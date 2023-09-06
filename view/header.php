@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>X-SHOP</title>
+    <title>TECHSHOP</title>
     <link rel="stylesheet" href="view\css\style.css">
     <style>
         .header img {
@@ -31,7 +31,7 @@
 <body>
     <div class="boxcenter">
         <div class="row mb header">
-            <a href="index.php"><img src="view/images/banner/logo.png" alt="error"></a>
+            <a href="index.php"><img src="view\images\z4615444526916_7ba923700ae268ce1de68fbea59974ab.jpg" alt="error"></a>
         </div>
         <div class="row mb menu">
             <ul>
@@ -60,6 +60,6 @@
         </div>
         <div class="dongchu">
             <marquee behavior="alternate" loop="-1">
-                Welcome to X-Shop - The kingdom of the tech heaven!
+                Welcome to TechShop - The kingdom of the tech heaven!
             </marquee>
         </div>

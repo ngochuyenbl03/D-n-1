@@ -30,7 +30,7 @@
                     $iddm = 0;
                 }
                 $dssp = loadAll_sanpham_index($kyw,$iddm);
-                $tendm = load_ten_dm($iddm);
+                $tendm = loadOne_danhmuc($iddm);
                 include "view/sanphamofdm.php";
                 break;
             case 'chi_tiet_sp':
@@ -38,7 +38,8 @@
                     $id = $_GET['idsp'];
                     $onesp = loadOne_sanpham($id);
                     extract($onesp);
-                    $sp_cl = load_sanpham_cungloai($id,$iddm);
+                    $sp_cl = load_sanpham_cungloai($iddm);
+                    $tendm = loadOne_danhmuc($iddm);
                     include "view/chi_tiet_sp.php";
                 } else{
                     include "view/home.php";
@@ -153,7 +154,7 @@
                     $idbill=insert_bill($name,$email,$address,$phone,$pttt,$ngaydathang,$tongdonhang);
 
                     foreach($_SESSION['mycart'] as $cart){
-                        insert_cart($_SESSION['username']['id'],$cart[0],$cart[2],$cart[1],$cart[3],$cart[4],$cart[5],$idbill);
+                        insert_cart($_SESSION['username']['id'],$cart[0],$cart[2],$cart[1],$cart[3],$cart[4],$tongdonhang,$idbill);
                     }
                     $_SESSION['cart']=[];
                 }

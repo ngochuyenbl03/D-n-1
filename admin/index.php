@@ -212,6 +212,6 @@ if (isset($_SESSION['username'])) {
 
         include "footer.php";
     }else{
-    echo "<div style='text-align: center'><img src='404.png'><br><h1>Bạn không có quyền truy cập.</h1> <br> <a href=../index.php>Trở về trang chủ</a></div>";
+    echo "<div style='text-align: center'><img src='404.png' width='50%'><br><h1>Bạn không có quyền truy cập.</h1> <br> <a href=../index.php>Trở về trang chủ</a></div>";
  }
 }

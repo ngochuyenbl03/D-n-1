@@ -6,7 +6,6 @@
                 <div class="row formdsloai">
                     <table>
                         <tr>
-                            <th></th>
                             <th>ID</th>
                             <th>Username</th>
                             <th>Password</th>
@@ -22,14 +21,13 @@
                             $xoatk = "index.php?act=xoatk&id=".$id;
                             $suatk = "index.php?act=suatk&id=".$id;
                             ?><tr>
-                                <td><input type="checkbox" name="" id=""></td>
                                 <td><?=$id?></td>
                                 <td><?=$username?></td>
                                 <td><?=$password?></td>
                                 <td><?=$email?></td>
                                 <td><?=$address?></td>
                                 <td><?=$phone?></td>
-                                <td><?=$role?></td>
+                                <td><?php if($role==1){echo "Quản trị viên";}else{echo "Khách hàng";}?></td>
                                 <td><a href="javascript:confirmDelete('<?=$xoatk?>')"><input type="button" value="Xóa"></a><a href="<?=$suatk?>"><input type="button" value="Sửa"></a></td>
                             </tr>
                             <?php } ?>
@@ -42,11 +40,6 @@
                     }
                 }
                 </script>
-                </div>
-                <div class="row mb10">
-                    <input type="button" value="Chon tat ca">
-                    <input type="button" value="Bo chon tat ca">
-                    <input type="button" value="Xoa cac muc da chon">
                 </div>
             </div>
         </div>

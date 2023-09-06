@@ -5,15 +5,8 @@
     </div>
     <div class="boxphai">
         <div class="row mb10">
-            
-            <div class="boxtitle">
-                <?php 
-                    if(is_array($tendm)){
-                        extract($tendm);
-                        echo $name;
-                    }
-                ?>
-            </div>
+
+            <div class="boxtitle">Danh muc: <?php if(is_array($tendm)) {extract($tendm); echo $name;} ?></div>
             <div class="row boxcontent">
                 <div class="row">
                 <?php

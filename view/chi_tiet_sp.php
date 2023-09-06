@@ -5,19 +5,29 @@
     </div>
     <div class="boxphai">
         <div class="row mb10">
-            <?php
-                extract($onesp); 
-            ?>
-            <div class="boxtitle"><?=$name?></div>
-            <div class="row boxcontent">
-                <?php 
-                    extract($onesp);
-                    $img = $img_path.$image;
-                    echo '<div class="row mb10"><img src="'.$img.'" style="margin-left:37%;border-radius: 5px;"></div>';
-                    echo " Tên sản phẩm: ".$name."<br>";
-                    echo " Giá sản phẩm: ".$price."<br>";
-                    echo " Mô tả sản phẩm: ".$mo_ta;
-                ?>   
+            <div class="boxtitle">Danh muc: <?php if(is_array($tendm)) {extract($tendm); echo $name;} ?></div>
+            <div class="row boxcontent2">
+                <?php
+                //extract($onesp);
+                $img = $img_path.$image;
+                ?>
+                <table>
+                    <tr>
+                        <td colspan="2"><img src="<?=$img?>" width="40%" style="border-radius: 5px;"></td>
+                    </tr>
+                    <tr>
+                        <td>Tên sản phẩm</td>
+                        <td><?=$name?></td>
+                    </tr>
+                    <tr>
+                        <td>Giá sản phẩm</td>
+                        <td><?= number_format($price, 0, ".", ".") ?>đ</td>
+                    </tr>
+                    <tr>
+                        <td>Mô tả sản phẩm</td>
+                        <td><?=$mo_ta?></td>
+                    </tr>
+                </table>   
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

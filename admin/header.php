@@ -26,9 +26,8 @@
                 <li><a href="index.php?act=listsp">Hàng hóa</a></li>
                 <li><a href="index.php?act=dskh">Khách hàng</a></li>
                 <li><a href="index.php?act=dsbl">Bình luận</a></li>
-                <li><a href="index.php?act=dsbill">Hóa đơn</a></li>
                 <li><a href="index.php?act=thongke">Thống kê</a></li>
-                <li><a href="index.php?act=dxadmin">Vào X-Shop</a></li>
+                <li><a href="index.php?act=dxadmin">Vào TechShop</a></li>
                 <li><a href="index.php?act=thoat">Đăng xuất</a></li>
                 <!-- <li>Xin chào, <?= $username ?></li> -->
             </ul>

@@ -22,7 +22,7 @@
                     </div>
                     <div class="row mb10">
                         Mo ta san pham<br>
-                        <textarea name="mota" cols="30" rows="10"></textarea> 
+                        <textarea name="mota" cols="130" rows="15"></textarea> 
                     </div>
                     <div class="row mb10">
                         Danh muc <br>

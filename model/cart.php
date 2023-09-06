@@ -112,7 +112,7 @@ function loadAll_thongke()
 }
 function insert_bill($name, $email, $address, $phone, $pttt, $ngaydathang, $tongdonhang)
 {
-    $sql = "insert into bill(bill_name,bill_email,bill_address,bill_tel,bill_pttt,ngaydathang,total) value('$name','$email','$address','$phone','$pttt','$ngaydathang','$tongdonhang')";
+   $sql =  "insert into bill(bill_name,bill_email,bill_address,bill_tel,bill_pttt,ngaydathang,total) values('$name','$email','$address','$phone','$pttt','$ngaydathang','$tongdonhang')";
     return pdo_execute_return_lastInsertId($sql);
 }
 function insert_cart($iduser, $idpro, $img, $name, $price, $soluong, $thanhtien, $idbill)
